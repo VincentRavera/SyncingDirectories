@@ -40,7 +40,7 @@ sync () {
         if [ -z "$target_file" ]
         then
             # File was not found !
-            echo -e "cp \"$src_file\" \"$target_dir\" # No file was found"
+            echo -e "cp \"$src_file\" \"$TARGET\" # No file was found"
         else
             # File was found but is Metadata updated ?
             md5check "$src_file" "$target_file"
