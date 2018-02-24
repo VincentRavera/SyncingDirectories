@@ -71,9 +71,9 @@ md5check(){
 
 # MAIN
 
-while getopts "h:" opt
+#I know this is useless but i'm lazy
+while getopts -- "h:" opt
 do
-    echo $opt
     case $1 in
         -h) usage; exit 0
         ;;
